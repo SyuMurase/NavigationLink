@@ -11,6 +11,7 @@
 		6604F30E298B6F320092C3FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6604F30D298B6F320092C3FE /* ContentView.swift */; };
 		6604F310298B6F330092C3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6604F30F298B6F330092C3FE /* Assets.xcassets */; };
 		6604F313298B6F330092C3FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6604F312298B6F330092C3FE /* Preview Assets.xcassets */; };
+		6604F31A298B74760092C3FE /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6604F319298B74760092C3FE /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		6604F30D298B6F320092C3FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6604F30F298B6F330092C3FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6604F312298B6F330092C3FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6604F319298B74760092C3FE /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				6604F30B298B6F320092C3FE /* TimerApp.swift */,
 				6604F30D298B6F320092C3FE /* ContentView.swift */,
+				6604F319298B74760092C3FE /* SettingView.swift */,
 				6604F30F298B6F330092C3FE /* Assets.xcassets */,
 				6604F311298B6F330092C3FE /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6604F31A298B74760092C3FE /* SettingView.swift in Sources */,
 				6604F30E298B6F320092C3FE /* ContentView.swift in Sources */,
 				6604F30C298B6F320092C3FE /* TimerApp.swift in Sources */,
 			);
