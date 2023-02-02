@@ -64,6 +64,7 @@ struct ContentView: View {
                 Spacer()
             }//VStack
         }//VStack
+            .background(.black)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink(destination: SecondView(info: timerValue)){
@@ -80,6 +81,13 @@ struct ContentView: View {
         
         if timerValue - count <= 0 {
             timerHandeler?.invalidate()
+            
+            //遅延1秒
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                // 0.5秒後に実行したい処理
+                count = 0
+            }
+            
         }
     }
     //開始関数
@@ -93,6 +101,7 @@ struct ContentView: View {
         if timerValue - count <= 0 {
             count = 0
         }
+        
         timerHandeler = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){ _ in countdownTimer()}
     }
     
@@ -101,7 +110,7 @@ struct ContentView: View {
 
 struct SecondView: View {
     let info:Int
-//    let timerValue:Int
+    
     @AppStorage("timer_value") var timerValue = 10
     var body: some View {
         VStack{

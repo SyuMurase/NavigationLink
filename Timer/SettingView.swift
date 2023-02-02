@@ -18,6 +18,7 @@ struct SettingView: View {
                 Text("60").tag(60).foregroundColor(Color.green)
             }
             .pickerStyle(WheelPickerStyle())
+            Spacer()
         }
         .background(.black)
 
